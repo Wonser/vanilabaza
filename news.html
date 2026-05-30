@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+  <title>News & Events</title>
+  <link rel="stylesheet" href="assets/css/hystmodal.min.css" media="all">
+<link rel="stylesheet" href="assets/css/swiper-bundle.min.css" media="all">
+<link rel="stylesheet" href="assets/css/fancybox.min.css" media="all">
+<link rel="stylesheet" href="assets/css/jquery.arcticmodal-0.3.css" media="all">
+<link rel="stylesheet" href="assets/css/main.min.css" media="all">
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+  <header class="header">
+  <div class="container">
+    <div class="header-wrap">
+      <div class="header-item header-item_left">
+        <a href="#" class="logo">
+          <img src="assets/img/logo.svg" alt="" class="logo-img">
+        </a>
+        <nav>
+          <ul class="menu body-s fw-600">
+            <li class="menu-item">
+              <a href="#">Концепция</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">Стримеры</a>
+            </li>
+            <li class="menu-item dropdown">
+              <a href="#">Еще</a>
+              <div class="dropdown__content">
+                <ul class="sub-menu">
+                  <li class="dropdown__item sub-menu-item">
+                    <a href="#">Новости и события</a>
+                  </li>
+                  <li class="dropdown__item sub-menu-item">
+                    <a href="#">Журнал изменений</a>
+                  </li>
+                  <li class="dropdown__item sub-menu-item">
+                    <a href="#">Медиа</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="search-btn">
+          <img src="assets/img/search.svg" alt="">
+        </div>
+        <a href="#" data-hystmodal="#menuModal" class="menu-btn body-s btn btn_border btn_icon-left">
+          <img src="assets/img/menu.svg" alt="">
+          <span>Меню</span>
+        </a>
+      </div>
+      <div class="header-actions">
+        <div class="header-actions__inner">
+          <div class="server dropdown">
+            <div class="server__head body-s">
+              <span>Vanilla</span>
+              <img src="assets/img/angle-down.svg" alt="">
+            </div>
+            <div class="server__content dropdown__content">
+              <a class="dropdown__item active">
+                Vanilla
+              </a>
+              <a class="dropdown__item">
+                Osaka
+              </a>
+              <a class="dropdown__item">
+                New
+              </a>
+            </div>
+          </div>
+          <form class="search-form body-s fw-500">
+            <input type="submit" value="" class="search-form__submit">
+            <input type="text" class="search-form__input" placeholder="Поиск по базе знаний">
+          </form>
+          <div class="hotkey hint">/</div>
+        </div>
+        <div class="search-close">
+          <img src="assets/img/close.svg" alt="">
+        </div>
+        <div class="search-box">
+          <div class="search-box-empty">
+            <p class="body-m fw-500 hint3">Ничего не найдено, попробуйте скорректировать запрос</p>
+          </div>
+          <a href="#" class="search-box-item">
+            <div class="search-box-item__inner">
+              <p class="body-m search-box-item__title fw-500 hint3">Автоматическая прокачка персонажа</p>
+              <p class="search-box-item__desc body-xs fw-500 hint">Умения</p>
+            </div>
+          </a>
+          <a href="#" class="search-box-item">
+            <img src="assets/img/result1.webp" alt="" class="search-box-item__img">
+            <div class="search-box-item__inner">
+              <p class="body-m search-box-item__title fw-500 hint3">Как включить автобой</p>
+              <p class="search-box-item__desc body-xs fw-500 hint">Гайды</p>
+            </div>
+          </a>
+          <a href="#" class="search-box-item">
+            <div class="search-box-item__inner">
+              <p class="body-m search-box-item__title fw-500 hint3">Автоматическая прокачка персонажа</p>
+              <p class="search-box-item__desc body-xs fw-500 hint">Умения</p>
+            </div>
+          </a>
+          <a href="#" class="search-box-item">
+            <div class="search-box-item__inner">
+              <p class="body-m search-box-item__title fw-500 hint3">Как включить автобой</p>
+              <p class="search-box-item__desc body-xs fw-500 hint">Гайды</p>
+            </div>
+          </a>
+          <a href="#" class="search-box-item">
+            <div class="search-box-item__inner">
+              <p class="body-m search-box-item__title fw-500 hint3">Автоматическая прокачка персонажа</p>
+              <p class="search-box-item__desc body-xs fw-500 hint">Умения</p>
+            </div>
+          </a>
+          <a href="#" class="search-box-item">
+            <div class="search-box-item__inner">
+              <p class="body-m search-box-item__title fw-500 hint3">Как включить автобой</p>
+              <p class="search-box-item__desc body-xs fw-500 hint">Гайды</p>
+            </div>
+          </a>
+          
+        </div>
+      </div>
+      <div class="header-item header-item_right">
+        <a href="#" class="btn btn_secondary">Кабинет</a>
+        <a href="#" class="btn btn_accent"><span>Начать играть</span></a>
+        <div class="lang dropdown">
+          <div class="lang__head btn btn_border btn_icon-left">
+            <img src="assets/img/lang.svg" alt="">
+            <span>Ru</span>
+          </div>
+          <div class="lang__content dropdown__content">
+            <a class="dropdown__item lang__item active">
+              Ru
+            </a>
+            <a class="dropdown__item lang__item">
+              En
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<div class="hystmodal" id="menuModal" aria-hidden="true">
+  <div class="hystmodal__wrap menu-modal-wrap">
+    <div class="hystmodal__window menu-modal" role="dialog" aria-modal="true">
+      <div class="menu-track"></div>
+    </div>
+  </div>
+</div> 
+
+  <main>
+
+    <!-- hero -->
+    <section class="hero-section section">
+      <div class="container">
+        <div class="hero">
+          <div class="hero__banner">
+            <img src="assets/img/hero-banner.webp" alt="">
+          </div>
+          <div class="hero__menu hero__menu_sticky">
+            <div class="menu-swiper swiper body-m">
+              <div class="swiper-arrow menu-swiper-prev">
+                <img src="assets/img/angle-left.svg" alt="">
+              </div>
+              <div class="swiper-wrapper category-menu fw-500">
+                <a href="#" class="swiper-slide menu-link">Предметы</a>
+                <a href="#" class="swiper-slide menu-link">Умения</a>
+                <a href="#" class="swiper-slide menu-link">Монстры и NPC</a>
+                <a href="#" class="swiper-slide menu-link">Локации</a>
+                <a href="#" class="swiper-slide menu-link">Механики</a>
+                <a href="#" class="swiper-slide menu-link">Статьи</a>
+                <a href="#" class="swiper-slide menu-link">Новости</a>
+                <a href="#" class="swiper-slide menu-link">Магазин L</a>
+                <a href="#" class="swiper-slide menu-link">Гайды</a>
+              </div>
+              <div class="swiper-arrow menu-swiper-next">
+                <img src="assets/img/angle-right.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="heading">
+            <div class="breadcrumbs body-s fw-500">
+              <a href="#" class="breacrumbs-item hint2">Главная</a>
+              <img src="assets/img/sep.svg" alt="">
+              <span class="breadcrumbs-item hint3">Новости и события</span>
+            </div>
+            <h1 class="heading__title h1">Новости и события</h1>
+            <p class="heading__desc fw-500 body-m hint3">Официальная база знаний сервера BAZA, где вы сможете найти ответы на все ваши вопросы</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- news -->
+    <section class="news-section section">
+      <div class="container">
+        <div class="news">
+          <div class="news__list">
+            <a href="#" class="news-card">
+              <div class="news-card__img">
+                <img src="assets/img/news1.webp" alt="">
+              </div>
+              <div class="news-card__head">
+                <div class="news-card__tag tag">new</div>
+                <p class="news-card__title body-m fw-600">Explorers of the Celestial Tower</p>
+              </div>
+              <p class="news-card__desc body-s hint3">
+                Специальная поддержка для новых игроков, а также для тех, кто начинает развитие на сервере.
+              </p>
+              <div class="news-card__category body-s fw-500 hint3">
+                <img src="assets/img/category1.svg" alt="">
+                Новости
+              </div>
+              <span class="news-card__date body-xs hint2">22 апреля 2026, 16:50</span>
+            </a>
+            <a href="#" class="news-card">
+              <div class="news-card__img">
+                <img src="assets/img/news2.webp" alt="">
+              </div>
+              <div class="news-card__days">
+                <div class="news-card__day">
+                  <p class="h6">22</p>
+                  <p class="body-s hint3">апр</p>
+                </div>
+                <div class="news-card__day">
+                  <p class="h6">26</p>
+                  <p class="body-s hint3">апр</p>
+                </div>
+              </div>
+              <div class="news-card__head">
+                <div class="news-card__tag tag">new</div>
+                <p class="news-card__title body-m fw-600">Bonus Start 24.04</p>
+              </div>
+              <p class="news-card__desc body-s hint3">
+                Специальная поддержка для новых игроков, а также для тех, кто начинает развитие на сервере.
+              </p>
+              <div class="news-card__category body-s fw-500 hint3">
+                <img src="assets/img/category2.svg" alt="">
+                События
+              </div>
+              <span class="news-card__date body-xs hint2">22 апреля 2026, 16:50</span>
+            </a>
+            <a href="#" class="news-card">
+              <div class="news-card__img">
+                <img src="assets/img/news1.webp" alt="">
+              </div>
+              <div class="news-card__head">
+                <div class="news-card__tag tag">new</div>
+                <p class="news-card__title body-m fw-600">Explorers of the Celestial Tower</p>
+              </div>
+              <p class="news-card__desc body-s hint3">
+                Специальная поддержка для новых игроков, а также для тех, кто начинает развитие на сервере.
+              </p>
+              <div class="news-card__category body-s fw-500 hint3">
+                <img src="assets/img/category1.svg" alt="">
+                Новости
+              </div>
+              <span class="news-card__date body-xs hint2">22 апреля 2026, 16:50</span>
+            </a>
+            <a href="#" class="news-card">
+              <div class="news-card__img">
+                <img src="assets/img/news2.webp" alt="">
+              </div>
+              <div class="news-card__days">
+                <div class="news-card__day">
+                  <p class="h6">22</p>
+                  <p class="body-s hint3">апр</p>
+                </div>
+                <div class="news-card__day">
+                  <p class="h6">26</p>
+                  <p class="body-s hint3">апр</p>
+                </div>
+              </div>
+              <div class="news-card__head">
+                <div class="news-card__tag tag">new</div>
+                <p class="news-card__title body-m fw-600">Bonus Start 24.04</p>
+              </div>
+              <p class="news-card__desc body-s hint3">
+                Специальная поддержка для новых игроков, а также для тех, кто начинает развитие на сервере.
+              </p>
+              <div class="news-card__category body-s fw-500 hint3">
+                <img src="assets/img/category2.svg" alt="">
+                События
+              </div>
+              <span class="news-card__date body-xs hint2">22 апреля 2026, 16:50</span>
+            </a>
+            <a href="#" class="news-card">
+              <div class="news-card__img">
+                <img src="assets/img/news1.webp" alt="">
+              </div>
+              <div class="news-card__head">
+                <div class="news-card__tag tag">new</div>
+                <p class="news-card__title body-m fw-600">Explorers of the Celestial Tower</p>
+              </div>
+              <p class="news-card__desc body-s hint3">
+                Специальная поддержка для новых игроков, а также для тех, кто начинает развитие на сервере.
+              </p>
+              <div class="news-card__category body-s fw-500 hint3">
+                <img src="assets/img/category1.svg" alt="">
+                Новости
+              </div>
+              <span class="news-card__date body-xs hint2">22 апреля 2026, 16:50</span>
+            </a>
+            <a href="#" class="news-card">
+              <div class="news-card__img">
+                <img src="assets/img/news2.webp" alt="">
+              </div>
+              <div class="news-card__days">
+                <div class="news-card__day">
+                  <p class="h6">22</p>
+                  <p class="body-s hint3">апр</p>
+                </div>
+                <div class="news-card__day">
+                  <p class="h6">26</p>
+                  <p class="body-s hint3">апр</p>
+                </div>
+              </div>
+              <div class="news-card__head">
+                <div class="news-card__tag tag">new</div>
+                <p class="news-card__title body-m fw-600">Bonus Start 24.04</p>
+              </div>
+              <p class="news-card__desc body-s hint3">
+                Специальная поддержка для новых игроков, а также для тех, кто начинает развитие на сервере.
+              </p>
+              <div class="news-card__category body-s fw-500 hint3">
+                <img src="assets/img/category2.svg" alt="">
+                События
+              </div>
+              <span class="news-card__date body-xs hint2">22 апреля 2026, 16:50</span>
+            </a>
+            <a href="#" class="news-card">
+              <div class="news-card__img">
+                <img src="assets/img/news1.webp" alt="">
+              </div>
+              <div class="news-card__head">
+                <div class="news-card__tag tag">new</div>
+                <p class="news-card__title body-m fw-600">Explorers of the Celestial Tower</p>
+              </div>
+              <p class="news-card__desc body-s hint3">
+                Специальная поддержка для новых игроков, а также для тех, кто начинает развитие на сервере.
+              </p>
+              <div class="news-card__category body-s fw-500 hint3">
+                <img src="assets/img/category1.svg" alt="">
+                Новости
+              </div>
+              <span class="news-card__date body-xs hint2">22 апреля 2026, 16:50</span>
+            </a>
+            <a href="#" class="news-card">
+              <div class="news-card__img">
+                <img src="assets/img/news2.webp" alt="">
+              </div>
+              <div class="news-card__days">
+                <div class="news-card__day">
+                  <p class="h6">26</p>
+                  <p class="body-s hint3">апр</p>
+                </div>
+              </div>
+              <div class="news-card__head">
+                <div class="news-card__tag tag">new</div>
+                <p class="news-card__title body-m fw-600">Bonus Start 24.04</p>
+              </div>
+              <p class="news-card__desc body-s hint3">
+                Специальная поддержка для новых игроков, а также для тех, кто начинает развитие на сервере.
+              </p>
+              <div class="news-card__category body-s fw-500 hint3">
+                <img src="assets/img/category2.svg" alt="">
+                События
+              </div>
+              <span class="news-card__date body-xs hint2">22 апреля 2026, 16:50</span>
+            </a>
+            <a href="#" class="news-card">
+              <div class="news-card__img">
+                <img src="assets/img/news1.webp" alt="">
+              </div>
+              <div class="news-card__head">
+                <div class="news-card__tag tag">new</div>
+                <p class="news-card__title body-m fw-600">Explorers of the Celestial Tower</p>
+              </div>
+              <p class="news-card__desc body-s hint3">
+                Специальная поддержка для новых игроков, а также для тех, кто начинает развитие на сервере.
+              </p>
+              <div class="news-card__category body-s fw-500 hint3">
+                <img src="assets/img/category1.svg" alt="">
+                Новости
+              </div>
+              <span class="news-card__date body-xs hint2">22 апреля 2026, 16:50</span>
+            </a>
+          </div>
+          <div class="pagination pagination_close">
+            <div class="pagination__actions">
+              <a href="#" class="pagination-left swiper-arrow">
+                <img src="assets/img/angle-left.svg" alt="">
+              </a>
+              <a href="#" class="pagination-item swiper-pagination-bullet swiper-pagination-bullet-active">1</a>
+              <a href="#" class="pagination-item swiper-pagination-bullet">2</a>
+              <a href="#" class="pagination-item swiper-pagination-bullet">3</a>
+              <a href="#" class="pagination-item swiper-pagination-bullet">4</a>
+              <a href="#" class="pagination-right swiper-arrow">
+                <img src="assets/img/angle-right.svg" alt="">
+              </a>
+            </div>
+            <div class="pagination__info">
+              <p class="body-s fw-500 hint3">5 из 100</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+            
+    <!-- seo -->
+    <section class="seo-section section">
+      <div class="container">
+        <div class="seo default-content">
+          <p class="seo__title h6">Официальная База Знаний Lineage 2 Essence</p>
+          <p class="seo__desc body-m hint3">Версия легендарной MMORPG, которая подойдет одиночкам, ведь у каждого персонажа есть собственный набор бафов. Здесь на специальных серверах Samurai, Eva и Wolf доступны те же особенности Essence, но упор делается на охотничью экономику.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="footer-main">
+      <div class="footer-main__left">
+        <a href="#" class="logo">
+          <img src="assets/img/logo.svg" alt="" class="logo-img">
+        </a>
+        <p class="body-s fw-600">База знаний проекта BA-ZA.GG</p>
+        <p class="body-s hint3">© 2026 BAZA. Все товарные знаки являются собственностью их владельцев</p>
+        <div class="socials">
+          <a href="#" class="socials-item">
+            <img src="assets/img/soc1.svg" class="svg" target="_blank" alt="">
+          </a>
+          <a href="#" class="socials-item">
+            <img src="assets/img/soc2.svg" class="svg" target="_blank" alt="">
+          </a>
+          <a href="#" class="socials-item">
+            <img src="assets/img/soc3.svg" class="svg" target="_blank" alt="">
+          </a>
+          <a href="#" class="socials-item">
+            <img src="assets/img/soc4.svg" class="svg" target="_blank" alt="">
+          </a>
+          <a href="#" class="socials-item">
+            <img src="assets/img/soc5.svg" class="svg" target="_blank" alt="">
+          </a>
+        </div>
+      </div>
+      <nav class="footer-main__mid body-s fw-600">
+        <div class="footer-main__item">
+          <p class="footer-main__title">Сообщество</p>
+          <ul class="footer-menu">
+            <li class="footer-menu-item">
+              <a href="#">Новости и события</a>
+            </li>
+            <li class="footer-menu-item">
+              <a href="#">Журнал событий</a>
+            </li>
+            <li class="footer-menu-item">
+              <a href="#">Медиа</a>
+            </li>
+            <li class="footer-menu-item">
+              <a href="#">Стримеры</a>
+            </li>
+            <li class="footer-menu-item">
+              <a href="#">Рекрутинг</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-main__item">
+          <p class="footer-main__title">Концепция</p>
+          <ul class="footer-menu">
+            <li class="footer-menu-item">
+              <a href="#">Vanilla</a>
+            </li>
+            <li class="footer-menu-item">
+              <a href="#">Osaka <span class="tag">NEW</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer-main__right">
+        <a href="#" class="btn btn_secondary">Кабинет</a>
+        <a href="#" class="btn btn_accent">Начать играть</a>
+        <div class="lang">
+          <div class="lang__head btn btn_border btn_icon-left">
+            <img src="assets/img/lang.svg" alt="">
+            <span>Ru</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-mid">
+      <a href="#" class="footer__server server-card">
+        <div class="server-card__head">
+          <p class="server-card__name body-m fw-500">Vanilla</p>
+          <span class="server-card__online body-xs">644</span>
+          <span class="server-card__status"></span>
+        </div>
+        <p class="server-card__title body-s hint-light">Классический PVP-сервер x1</p>
+        <p class="server-card__date body-xs hint-light3">365 дней</p>
+      </a>
+      <a href="#" class="footer__server server-card">
+        <div class="server-card__head">
+          <p class="server-card__name body-m fw-500">Osaka</p>
+          <span class="server-card__online body-xs">868</span>
+          <span class="server-card__status"></span>
+        </div>
+        <p class="server-card__title body-s hint-light">Необычный сервер x30</p>
+        <p class="server-card__date body-xs hint-light3">114 дней</p>
+      </a>
+      <a href="#" class="footer__server server-card">
+        <div class="server-card__head">
+          <p class="server-card__name body-m fw-500">New</p>
+          <span class="server-card__online body-xs">868</span>
+          <span class="server-card__status server-card__status_error"></span>
+        </div>
+        <p class="server-card__title body-s hint-light">Необычный сервер x30</p>
+        <p class="server-card__date body-xs hint-light3">114 дней</p>
+      </a>
+    </div>
+    <div class="footer-bot">
+      <p class="body-s hint2">Вся информация, размещенная на сайте, носит исключительно ознакомительный характер и не является публичной офертой.</p>
+      <a href="#" class="body-s fw-600">Правила сайта</a>
+    </div>
+  </div>
+
+  <a href="#" class="scroll-up">
+    <img src="assets/img/angle-up.svg" alt="">
+  </a>
+</footer>
+
+
+  <script src="assets/js/hystmodal.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/mask.js"></script>
+  <script src="assets/js/fancybox.umd.min.js"></script>
+  <script src="assets/js/jquery.arcticmodal-0.3.min.js"></script>
+  <script src="assets/js/menu.js"></script>
+  <script src="assets/js/main.min.js"></script>
+
+</body>
+</html>
