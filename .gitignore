@@ -1,6 +1,6 @@
-css/
-img/
-js/
+/css/
+/img/
+/js/
 node_modules/
 src/
 gulpfile.js
